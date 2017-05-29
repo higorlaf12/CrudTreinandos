@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+            <div id = "saida">
+
+            </div>
+</body>
+<!--<script>
+    var pessoas = {
+        nome : "Jão",
+        idade : 35,
+        dizerAlgo:function (mensagem, saida) {
+            saida(mensagem);
+
+        }
+    };
+    console.log(pessoas.nome);
+    console.log(pessoas.idade);
+    pessoas.dizerAlgo("Olá do Parametro!", function (msg) {
+        window.alert(msg);
+    });
+    //Div
+    pessoas.dizerAlgo("Ola do Parametro Div!", function (msg) {
+       //var saidaDiv = document.getElementById("saida");
+       saida.innerHTML= msg;
+    });
+    //Console
+    pessoas.dizerAlgo("Olá do Parametro Console!",function (msg) {
+       console.log(msg);
+
+    });
+
+
+</script> -->
+            <script>
+                    function  Pessoa(nome, idade) {
+                        this.nome = nome;
+                        this.idade = idade;
+
+                        this.dizerOi = function () {
+                            window.alert("oi 2");
+                        }
+                    }
+
+                     //Pessoa.prototype.dizerOi = function () {
+                        //window.alert("oi");
+                    //}
+
+                    var p1 = new Pessoa("Jão",23);
+                    console.log(p1.nome);
+                    console.log(p1.idade);
+                    p1.dizerOi();
+            </script>
+</html>
